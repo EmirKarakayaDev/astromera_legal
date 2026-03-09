@@ -1,11 +1,6 @@
-# OS generated files
 .DS_Store
 Thumbs.db
 
-# GEMINI / IDE files
-.gemini/
-.agent/
-.agents/
 brain/
 implementation_plan.md
 task.md
