@@ -14,9 +14,13 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+html {
+    scroll-behavior: smooth;
+    background-color: #fff2f4;
+}
+
 html,
 body {
-    scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-x: clip;
     width: 100%;
@@ -489,6 +493,10 @@ body {
 
     .app-name {
         font-size: 1.75rem;
+    }
+
+    body {
+        background-image: radial-gradient(circle at top center, rgba(255, 182, 193, 0.05), transparent 70%);
     }
 
     .badge-img,
