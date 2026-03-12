@@ -59,7 +59,13 @@
         const urlLang = urlParams.get('lang');
         const savedLang = localStorage.getItem('preferred-lang');
         
-        const initialLang = (urlLang === 'tr' || urlLang === 'en') ? urlLang : (savedLang || 'en');
+        // Auto-detect browser language
+        let browserLang = navigator.language || navigator.userLanguage;
+        browserLang = browserLang ? browserLang.split('-')[0].toLowerCase() : 'en';
+        
+        // Priority: URL > Saved Preference > Browser Language > Default (en)
+        const initialLang = (urlLang === 'tr' || urlLang === 'en') ? urlLang : 
+                            (savedLang || (browserLang === 'tr' ? 'tr' : 'en'));
         setLanguage(initialLang);
     }
 })();
