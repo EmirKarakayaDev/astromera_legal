@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Astromera Gizlilik Politikası – Verilerinizi nasıl topladığımızı ve koruduğumuzu öğrenin.">
+        content="AstroMera Gizlilik Politikası – Verilerinizi nasıl topladığımızı ve koruduğumuzu öğrenin.">
     <meta name="theme-color" content="#fff2f4">
-    <title>Privacy Policy – Astromera</title>
+    <title>Privacy Policy – AstroMera</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,105 +20,131 @@
 
         <!-- Back -->
         <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="index.html">← Astromera</a>
+            <a href="index.html" class="tr-only">← AstroMera</a>
+            <a href="index.html" class="en-only">← AstroMera</a>
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="tr">TR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
         </nav>
 
         <!-- Hero -->
         <header class="hero hero--sub">
             <div class="app-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
+                <img src="images/logo.svg" alt="AstroMera Icon">
             </div>
-            <h1 class="app-name">Privacy Policy</h1>
-            <p class="short-desc">Astromera Gizlilik Politikası</p>
-            <div class="last-updated">Son Güncelleme: <time datetime="2026-03-09">9 Mart 2026</time></div>
+            <h1 class="app-name tr-only">Gizlilik Politikası</h1>
+            <h1 class="app-name en-only">Privacy Policy</h1>
+            <p class="short-desc tr-only">AstroMera Gizlilik Politikası</p>
+            <p class="short-desc en-only">AstroMera Privacy Policy</p>
+            <div class="last-updated tr-only">Son Güncelleme: <time datetime="2026-03-16">16 Mart 2026</time></div>
+            <div class="last-updated en-only">Last Updated: <time datetime="2026-03-16">March 16, 2026</time></div>
         </header>
 
         <!-- Anchor Menü -->
         <nav class="anchor-menu" aria-label="Bölümler">
-            <ul>
-                <li><a href="#toplanan-veriler">Toplanan Veriler</a></li>
-                <li><a href="#kullanim">Nasıl Kullanıyoruz</a></li>
-                <li><a href="#ucuncu-taraf">Üçüncü Taraf Servisler</a></li>
-                <li><a href="#guvenlik">Veri Güvenliği</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
+            <ul class="tr-only">
+                <li><a href="#tr-collect">Toplanan Veriler</a></li>
+                <li><a href="#tr-analytics">Analizler</a></li>
+                <li><a href="#tr-third-party">Üçüncü Taraf</a></li>
+                <li><a href="#tr-sharing">Veri Paylaşımı</a></li>
+                <li><a href="#tr-contact">İletişim</a></li>
+            </ul>
+            <ul class="en-only">
+                <li><a href="#en-collect">Information We Collect</a></li>
+                <li><a href="#en-analytics">Analytics</a></li>
+                <li><a href="#en-third-party">Third-Party Services</a></li>
+                <li><a href="#en-sharing">Data Sharing</a></li>
+                <li><a href="#en-contact">Contact</a></li>
             </ul>
         </nav>
 
         <main>
             <article class="document-section">
-                <div class="content-block">
-                    <p>Bu gizlilik politikası, <strong>Astromera</strong> uygulamasını ("Uygulama") geliştiren
-                        <strong>Astromera</strong> ("biz", "bizim") tarafından hazırlanmıştır.
-                        Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.
-                    </p>
+                <!-- Turkish Content -->
+                <div class="content-block tr-only">
+                    <p>AstroMera, astroloji temelli içgörüleri meditasyon, yoga ve farkındalık içerikleriyle birleştiren bir yaşam tarzı mobil uygulamasıdır. Uygulama, <strong>Nukai Labs FZ-LLC</strong> ("Şirket") tarafından işletilmektedir.</p>
+                    <p>Bu Gizlilik Politikası, AstroMera mobil uygulamasını kullandığınızda bilgilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.</p>
 
-                    <h2 id="toplanan-veriler">1. Toplanan Veriler</h2>
-                    <p>Uygulamanın temel işlevlerini yerine getirebilmesi için yalnızca gerekli olan minimal düzeyde
-                        veri toplanmaktadır.</p>
+                    <h2 id="tr-collect">1. Toplanan Veriler</h2>
+                    <p>Yalnızca uygulamanın çalışması ve talep edilen hizmetlerin sunulması için gerekli olan veriler toplanır.</p>
                     <ul>
-                        <li><strong>Kullanım Verileri:</strong> Uygulama içi etkileşimler, oturum süresi, hata
-                            kayıtları, cihaz modeli ve işletim sistemi sürümü.</li>
-                        <li><strong>Gönüllü Sağlanan Veriler:</strong> Destek talebi sırasında e-posta yoluyla
-                            ilettiğiniz ad-soyad ve e-posta adresi gibi bilgiler.</li>
+                        <li><strong>Hesap Bilgileri:</strong> Ad (isteğe bağlı) ve e-posta adresi. "Sign in with Apple" kullanımında gizlilik tercihlerine saygı duyulur.</li>
+                        <li><strong>Doğum Bilgileri:</strong> Doğum tarihi, saati ve yeri yalnızca astrolojik hesaplamalar için kullanılır.</li>
+                        <li><strong>Kullanım Bilgileri:</strong> Uygulama içi etkileşimler, rapor geçmişi ve bildirim tercihleri.</li>
+                        <li><strong>Cihaz Bilgileri:</strong> Cihaz türü, modeli ve işletim sistemi sürümü. Kesin konum bilgisi toplanmaz.</li>
                     </ul>
-                    <p>Uygulama, arka planda kişisel verilerinizi izlemez; konum, mikrofon, kamera gibi hassas izinler
-                        yalnızca ilgili özelliği kullandığınızda ve açıkça onay vermeniz halinde talep edilir.</p>
 
-                    <h2 id="kullanim">2. Verileri Nasıl Kullanıyoruz?</h2>
-                    <p>Topladığımız bilgiler yalnızca aşağıdaki amaçlarla kullanılır:</p>
-                    <ul>
-                        <li>Uygulamanın sorunsuz çalışmasını sağlamak.</li>
-                        <li>Teknik hataları tespit etmek ve düzeltmek.</li>
-                        <li>Yeni özellikler geliştirmek için anonim kullanım analizi yapmak.</li>
-                        <li>Kullanıcı destek taleplerine yanıt vermek.</li>
-                    </ul>
-                    <p>Kişisel verilerinizi <strong>asla satmıyor, kiralamıyor veya üçüncü taraflarla ticari amaçla
-                            paylaşmıyoruz.</strong></p>
+                    <h2 id="tr-analytics">2. Analizler ve Bildirimler</h2>
+                    <p>Uygulama işlevselliğini artırmak için analiz araçları kullanılır. İzin vermeniz halinde raporlar ve güncellemeler için anlık bildirimler gönderilir. Bunlar ayarlardan kapatılabilir.</p>
 
-                    <h2 id="ucuncu-taraf">3. Üçüncü Taraf Servisler</h2>
-                    <p>Uygulama, yalnızca güvenilir ve yaygın kabul görmüş üçüncü taraf servislerle entegre edilmiştir.
-                        Bu servisler kendi gizlilik politikalarına tabidir:</p>
-                    <ul>
-                        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google
-                                Firebase</a> – Analiz ve hata raporlama.</li>
-                        <li><a href="https://www.apple.com/legal/privacy/tr/" target="_blank" rel="noopener">Apple
-                                Analytics</a> – Uygulama içi kullanım istatistikleri.</li>
-                    </ul>
-                    <p>Bu servislerin linkleri örnek amaçlıdır; kullandıklarınıza göre güncelleyiniz.</p>
+                    <h2 id="tr-ai-processing">3. Yapay Zeka Süreçleri</h2>
+                    <p>Bazı özellikler, astrolojik hesaplamalara dayalı içgörüler üretmek için yapay zeka teknolojilerini kullanır. Bu sistemler yalnızca ilgili raporu üretmek için gerekli veriyi işler.</p>
 
-                    <h2 id="guvenlik">4. Veri Güvenliği ve Saklama</h2>
-                    <p>Verilerinizin güvenliği bizim için önceliktir. Endüstri standardı güvenlik önlemleri (şifreleme,
-                        güvenli iletişim protokolleri vb.) uygulanmaktadır.</p>
-                    <p>Veriler, yalnızca belirtilen amaçları yerine getirmek için gerekli olduğu süre boyunca saklanacak
-                        ve ardından güvenli şekilde silinecektir. Destek amacıyla aldığımız e-postalar, talep
-                        çözümlendikten sonra en geç 1 yıl içinde silinmektedir.</p>
+                    <h2 id="tr-third-party">4. Üçüncü Taraf Servisler</h2>
+                    <p>Uygulama; Google Firebase (Analiz), OpenAI (Yapay Zeka) ve Astroloji API sağlayıcıları gibi güvenilir iş ortaklarıyla çalışır. Bu sağlayıcılar verilerinizi kendi modellerini eğitmek için kullanamazlar.</p>
 
-                    <h2>5. Çocukların Gizliliği</h2>
-                    <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve bu kişilerden bilerek kişisel veri
-                        toplamaz. Bir ebeveyn veya vasi olarak çocuğunuzun uygulamamıza bize bilgi sağladığını fark
-                        ederseniz lütfen bizimle iletişime geçin; söz konusu bilgileri derhal sileceğiz.</p>
+                    <h2 id="tr-sharing">5. Veri Paylaşımı ve Güvenliği</h2>
+                    <p>Kişisel verilerinizin satılmaz veya kiralanmaz. Veriler yalnızca teknik hizmet sağlayıcılarla veya yasal zorunluluk hallerinde paylaşılır. Endüstri standardı güvenlik önlemleri uygulanmaktadır.</p>
 
-                    <h2 id="iletisim">6. Politika Değişiklikleri ve İletişim</h2>
-                    <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Değişiklikler bu sayfada yayınlanır ve
-                        "Son Güncelleme" tarihi güncellenir. Sorularınız için:</p>
+                    <h2 id="tr-retention">6. Veri Saklama ve Silme</h2>
+                    <p>Veriler hizmet sunumu için gerekli süre boyunca saklanır. Hesabınızı sildiğinizde verileriniz 30 gün içinde silinir veya anonim hale getirilir. Talepleriniz için: <strong>support@astromera.com</strong>.</p>
+
+                    <h2 id="tr-contact">7. İletişim Bilgileri</h2>
                     <div class="contact-card">
-                        <p><strong>Geliştirici:</strong> Astromera</p>
-                        <p><strong>Konum:</strong> İstanbul, Türkiye</p>
-                        <p><strong>E-posta:</strong> <a href="mailto:destek@astromera.com">destek@astromera.com</a></p>
+                        <p><strong>İşletmeci:</strong> Nukai Labs FZ-LLC</p>
+                        <p><strong>Adres:</strong> Meydan Grandstand, 6th Floor, Meydan Road, Nad Al Sheba, Dubai, UAE</p>
+                        <p><strong>E-posta:</strong> <a href="mailto:support@astromera.com">support@astromera.com</a></p>
+                    </div>
+                </div>
+
+                <!-- English Content -->
+                <div class="content-block en-only">
+                    <p>AstroMera is a wellness and lifestyle mobile application that combines astrology-based insights with meditation, yoga, and mindfulness content. The application is operated by <strong>Nukai Labs FZ-LLC</strong> (“Company”, “we”, “us”, or “our”).</p>
+                    <p>This Privacy Policy explains how information is collected, used, and protected when you use the AstroMera mobile application (“App”). By using the App, you agree to the practices described in this Privacy Policy.</p>
+
+                    <h2 id="en-collect">1. Information We Collect</h2>
+                    <p>We collect only the information necessary to operate the App and provide the services requested by users.</p>
+                    <ul>
+                        <li><strong>Account Information:</strong> Name (optional) and Email address. If you use "Sign in with Apple", we respect your privacy choices.</li>
+                        <li><strong>Birth Information:</strong> Date, time, and place of birth are used strictly for astrological calculations.</li>
+                        <li><strong>Usage Information:</strong> App interactions, feature history, and notification preferences.</li>
+                        <li><strong>Device Information:</strong> Device type, model, and OS version. No precise location is collected.</li>
+                    </ul>
+
+                    <h2 id="en-analytics">2. Analytics & Notifications</h2>
+                    <p>We use analytics tools to improve functionality and reliability. If enabled, push notifications are sent for reports, service updates, and important app info. You can disable these in settings.</p>
+
+                    <h2 id="en-ai-processing">3. Artificial Intelligence Processing</h2>
+                    <p>Certain features use AI to generate insights based on astrological calculations. AI systems process only the information necessary to generate requested reports.</p>
+
+                    <h2 id="en-third-party">4. Third-Party Services</h2>
+                    <p>The App relies on trusted providers such as Google Firebase (Analytics), OpenAI (AI processing), and Astrology API providers. These providers are contractually restricted from using your data to train their models.</p>
+
+                    <h2 id="en-sharing">5. Data Sharing & Security</h2>
+                    <p>We do not sell, rent, or trade personal information. Data is only shared with technical providers or when legally required. We implement standard security measures, though no digital system is 100% secure.</p>
+
+                    <h2 id="en-retention">6. Data Retention & Deletion</h2>
+                    <p>Data is kept as long as necessary. If you delete your account, data is removed or anonymized within 30 days. Contact <strong>support@astromera.com</strong> for deletion requests.</p>
+
+                    <h2 id="en-contact">7. Contact Information</h2>
+                    <div class="contact-card">
+                        <p><strong>Operator:</strong> Nukai Labs FZ-LLC</p>
+                        <p><strong>Address:</strong> Meydan Grandstand, 6th Floor, Meydan Road, Nad Al Sheba, Dubai, UAE</p>
+                        <p><strong>Email:</strong> <a href="mailto:support@astromera.com">support@astromera.com</a></p>
                     </div>
                 </div>
             </article>
         </main>
 
         <footer class="site-footer">
-            <p>&copy; 2026 <strong>Astromera</strong></p>
-            <p><a href="mailto:destek@astromera.com">destek@astromera.com</a> &nbsp;|&nbsp; İstanbul, Türkiye</p>
+            <p>&copy; 2026 <strong>AstroMera</strong></p>
+            <p class="tr-only"><a href="mailto:support@astromera.com">support@astromera.com</a> | Dubai, UAE</p>
+            <p class="en-only"><a href="mailto:support@astromera.com">support@astromera.com</a> | Dubai, UAE</p>
         </footer>
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

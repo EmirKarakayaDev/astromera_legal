@@ -6,7 +6,13 @@
     --link-hover: #5c0000;
     --card-bg: #ffffff;
     --border-color: #e8e8eb;
-    --shadow-light: 0 2px 12px rgba(0, 0, 0, 0.06);
+    --shadow-light: 0 4px 16px rgba(0, 0, 0, 0.06);
+    --primary-color: #3d0000;
+}
+
+[lang="tr"] .en-only,
+[lang="en"] .tr-only {
+    display: none !important;
 }
 
 * {
@@ -51,6 +57,36 @@ body {
 /* ─── Back ─── */
 .breadcrumb {
     margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang-switcher {
+    display: flex;
+    gap: 8px;
+    background: var(--bg-color);
+    padding: 4px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.lang-btn {
+    padding: 6px 14px;
+    border-radius: 16px;
+    border: none;
+    background: transparent;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #888;
+    transition: all 0.2s ease;
+}
+
+.lang-btn.active {
+    background: var(--card-bg);
+    color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .breadcrumb a {
@@ -92,9 +128,9 @@ body {
 }
 
 .app-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
 }
 
 .hero--sub .app-icon {
